@@ -13,7 +13,9 @@ Extension of hex0.
 
 # pointers
 
-The size of a pointer is
+A pointer is referenced using `%l` and is a relative address.
+
+the size of a pointer is
 * 32 bit on x86
-* 64 bit on x64
+* 32 bit on x64
 * 16 bit on KNIGHT
