@@ -26,6 +26,6 @@ Extension of hex0.
 
 ## displacement
 
-```
-%foo>bar
-```
+* `%foo>bar` for 32 bit
+* `@foo>bar` for 16 bit
+* `!foo>bar` for 8 bit
