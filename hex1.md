@@ -23,4 +23,3 @@ knight calculates the displacement as the number of bytes from the start of the 
 
 x86 calculates the displacement as the number of bytes from the end of the immediate to the destination (which could be in the middle of the instruction in the event of a double immediate instruction, but usually it means from the end of the instruction for x86 and x86_64).
 
-
