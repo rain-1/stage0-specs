@@ -48,8 +48,10 @@ More specificly are the bits or nybbles or bytes are ordered from the big end (m
 
 ### Examples
 
-`%-2` would be converted to `FE FF FF FF` for x86 because x86 orders their bytes in little endian order but their bits/nybbles in big endian order.
-`%-2` would be converted to `FF FF FF FE` for knight because knight orders their bits/nybbles/bytes in big endian order.
+If `p` had value `-2` then
+* `%p` would be converted to `FE FF FF FF` for x86 because x86 orders their bytes in little endian order but their bits/nybbles in big endian order.
+* `%p` would be converted to `FF FF FF FE` for knight because knight orders their bits/nybbles/bytes in big endian order.
 
-the number `%0x12345678` would convert to `78 56 34 12` for x86
-the number `%0x12345678` would convert to `12 34 56 78` for knight.
+If `n` had the value `0x12345678`
+* the number `%n` would convert to `78 56 34 12` for x86
+* the number `%n` would convert to `12 34 56 78` for knight.
