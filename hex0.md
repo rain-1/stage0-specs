@@ -13,7 +13,7 @@ bit0 assembles bytes out of individual bits and is only used on the most insane 
 
 ## User friendliness extensions
 
-In order to simplify the task of keeping track of what you are doing and giving the programmer the flexibility required hex0 supports both `#` and `;` line comments which terminates when a line feed character (0x0A) is read.
+In order to simplify the task of keeping track of what you are doing and giving the programmer the flexibility required hex0 supports both # (0x23) and ; (0x3B) line comments which terminates when a line feed character (0x0A) is read.
 
 To avoid the eternal platform specific end of line character question, all implementations are to convert the carriage return character (0x0D) to the line feed character (0x0A) prior to processing.
 Should your platform use some character other than line feed or carriage return when the keyboard return/enter key is pressed, the implementation is required to convert said character to line feed and stored form is to utilize the line feed character (0x0A).
