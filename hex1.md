@@ -39,7 +39,7 @@ The calculation for the relative displacement is the number of bytes from the en
 
 All pointers are 16bits long with big endian byte, nybble and bit orientation.
 Therefor are prefixed with @ (0x40).
-The calculation for the relative displacement is the number of bytes from the start of the instruction to the destination.
+The calculation for the relative displacement is the number of bytes from the end of the immediate to the destination.
 
 ## Big and little endianness
 
